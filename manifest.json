@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "name": "astral",
+  "description": "Visual art resource repository — AI art, shaders, and assets for generative and theosophy-inspired art projects.",
+  "directories": {
+    "shaders": {
+      "path": "shaders/",
+      "description": "GLSL/HLSL shader source files",
+      "subdirectories": {
+        "vertex":   { "path": "shaders/vertex/",   "description": "Vertex shaders" },
+        "fragment": { "path": "shaders/fragment/",  "description": "Fragment (pixel) shaders" },
+        "compute":  { "path": "shaders/compute/",   "description": "Compute shaders" },
+        "examples": { "path": "shaders/examples/",  "description": "Annotated example shader programs" }
+      }
+    },
+    "assets": {
+      "path": "assets/",
+      "description": "Static visual art assets",
+      "subdirectories": {
+        "textures":   { "path": "assets/textures/",   "description": "Tileable texture images (PNG, EXR, HDR)" },
+        "images":     { "path": "assets/images/",     "description": "General artwork and finished pieces" },
+        "references": { "path": "assets/references/", "description": "Reference photos and mood-board images" },
+        "palettes":   { "path": "assets/palettes/",   "description": "Colour palette files (ASE, GPL, JSON)" }
+      }
+    },
+    "ai-art": {
+      "path": "ai-art/",
+      "description": "AI-assisted and generative art files",
+      "subdirectories": {
+        "prompts": { "path": "ai-art/prompts/", "description": "Text prompts for image-generation models" },
+        "outputs": { "path": "ai-art/outputs/", "description": "AI-generated images and videos" },
+        "styles":  { "path": "ai-art/styles/",  "description": "Style reference images and LoRA/embedding weights" },
+        "models":  { "path": "ai-art/models/",  "description": "Model configuration files and metadata" }
+      }
+    },
+    "scripts": {
+      "path": "scripts/",
+      "description": "Utility scripts for processing and converting assets",
+      "subdirectories": {
+        "processing":  { "path": "scripts/processing/",  "description": "Asset transformation scripts" },
+        "conversion":  { "path": "scripts/conversion/",  "description": "Format-conversion helpers" }
+      }
+    },
+    "docs": {
+      "path": "docs/",
+      "description": "Project documentation"
+    }
+  },
+  "files": []
+}
