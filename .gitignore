@@ -1,0 +1,68 @@
+# ──────────────────────────────────────────────
+# OS / editor noise
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# ──────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# ──────────────────────────────────────────────
+# Large binary model weights (use Git LFS or
+# external storage instead)
+# ──────────────────────────────────────────────
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.gguf
+*.onnx
+
+# ──────────────────────────────────────────────
+# Large raw / intermediate renders
+# (commit only final, compressed outputs)
+# ──────────────────────────────────────────────
+*.tmp
+*.bak
+*.orig
+
+# Intermediate video formats
+*.avi
+*.mov
+*.mkv
+
+# Very large uncompressed rasters (add
+# specific files via Git LFS if needed)
+*.tiff
+*.tif
+*.bmp
+*.psd
+*.xcf
+
+# ──────────────────────────────────────────────
+# Shader compiler artefacts
+# ──────────────────────────────────────────────
+*.spv
+
+# ──────────────────────────────────────────────
+# Node / web tooling (if any helper tools exist)
+# ──────────────────────────────────────────────
+node_modules/
+.npm/
